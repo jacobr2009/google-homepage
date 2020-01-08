@@ -47,9 +47,8 @@ form #search-box:focus {
 }
 
 #search-buttons li button:hover {
-    border: solid 1px;
-    color: #3f3f3f;
-    background-color: #e0e0e0;
+    border: solid 1px #AAAAAA;
+    color: #444444;
     cursor: pointer;
 }
 
@@ -58,6 +57,35 @@ form #search-box:focus {
     outline: none;
     color: #3f3f3f;
     background-color: #e0e0e0;
+}
+
+.top-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.top-nav li {
+    display: inline;
+    padding: 5px 5px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #555;
+    font-size: .85em;
+}
+
+.top-nav li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.top-nav li a:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+.right {
+    float: right;
 }
 
 /* .search-icon {
