@@ -1,27 +1,36 @@
-#google-logo {
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.search img {
     margin: auto;
     display: block;
-    margin-top: 10%;
+    padding-top: 150px;
 }
 
-form #search-box {
-    margin: 1em auto;
+#search-box {
+    margin: 30px auto 30px auto;
     width: 500px;
     display: block;
-    height: 30px;
+    height: 40px;
+    line-height: 40px;
     font-size: 1em;
-    font-family: Helvetica, Arial, sans-serif;
-    border-radius: 1em;
+    border-radius: 1.5em;
     border: 1px solid #c0c0c0;
-    padding-left: 20px;
+    padding-left: 40px;
+    background-image: url("assets/images/search-google.png"), url("assets/images/voice-google.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 5px 5px, 500px 2px;
 }
 
-form #search-box:focus {
-    border-color: #4285F4;
+#search-box:focus, #search-box:hover {
+    border-color: transparent;
     outline: none;
+    box-shadow: 0 0 5px #c0c0c0;
 }
 
-#search-buttons {
+.search ul {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -29,54 +38,69 @@ form #search-box:focus {
     text-align: center;
 }
 
-#search-buttons li {
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
+.search li {
+    display: inline-block;
 }
 
-#search-buttons li button {
-    height: 35px;
-    font-size: 1em;
-    color: #7b7e7e;
+a.button {
+      -webkit-appearance: button;
+      -moz-appearance: button;
+      appearance: button;
+    text-decoration: none;
+    height: 36px;
+    line-height: 36px;
+    font-size: .85em;
+    font-weight: 300;
+    color: #222;
     padding-left: 1em;
     padding-right: 1em;
     margin: 0 .5em;
     border-radius: .5em;
     background-color: #F4F4F4;
+    box-sizing: border-box;
+    border: 1px solid transparent;
 }
 
-#search-buttons li button:hover {
+a.button:hover {
     border: solid 1px #AAAAAA;
-    color: #444444;
+    font-weight: 400;
     cursor: pointer;
+    box-shadow: 0 0 5px #c0c0c0;
 }
 
-#search-buttons li button:focus {
+a.button:focus {
     border: solid 1px #4285F4;
     outline: none;
     color: #3f3f3f;
     background-color: #e0e0e0;
 }
 
-.top-nav {
+.top-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+}
+
+.top-nav ul{
     list-style-type: none;
     padding: 0;
-    position: fixed;
-    top: 0px;
-    width: 100%;
+    margin: 15px;
   }
 
-.top-nav li {
-    display: inline;
-    padding: 5px 10px 5px 10px;
+.top-nav ul li {
+    display: inline-block;
+    padding: 2px 10px;
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
     color: #555;
+    height: 32px;
+    line-height: 32px;
 }
 
 .top-nav li a {
-    display: block;
     text-decoration: none;
     color: #555;
     font-size: .85em;
@@ -86,37 +110,34 @@ form #search-box:focus {
     text-decoration: underline;
 }
 
-.bottom-nav {
+.bottom-nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0px;
+    margin: 0;
     background-color: #f2f2f2;
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    border: 2px #777777;
   }
 
-.bottom-nav li {
+.bottom-nav ul li {
     display: inline;
     padding: 5px 10px 5px 10px;
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
     color: #555;
     font-size: .8em;
-    vertical-align: middle;
 }
 
-.bottom-nav li a {
+.bottom-nav ul li a {
     display: block;
     text-decoration: none;
     color: #555;
     padding: 10px 8px;
 }
 
-.bottom-nav li a:hover {
+.bottom-nav ul li a:hover {
     text-decoration: underline;
 }
 
@@ -141,3 +162,7 @@ form #search-box:focus {
     transform: translateY(-50%);
     pointer-events: none;
 } */
+
+#search-google-logo {
+    height: 30px;
+}
