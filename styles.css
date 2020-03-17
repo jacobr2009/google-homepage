@@ -194,6 +194,7 @@ a.button:focus {
 
 .ads ul {
     list-style: none;
+    margin-left: 80px;
 }
 
 .ads ul a {
