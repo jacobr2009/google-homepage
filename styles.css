@@ -185,3 +185,51 @@ a.button:focus {
 .video {
     padding-left: 120px;
 }
+
+/*
+============================
+    ads
+============================
+*/
+
+.ads ul {
+    list-style: none;
+}
+
+.ads ul a {
+    text-decoration: none;
+}
+
+.ads ul a:visited {
+    color: #609;
+}
+
+.ads ul a:hover {
+    text-decoration: underline;
+}
+
+.ads ul {
+    line-height: 8px;
+    margin-bottom: 16px;
+    margin-top: 48px;
+}
+
+.adlink {
+    color: #555;
+}
+
+.adsummary {
+    color: #1a0dab;
+    font-size: 20px;
+
+}
+
+.adlabel {
+    font-weight: bold;
+    color: black;
+}
+
+.addescription {
+    font-size: 14px;
+    color: #3C4043
+}
